@@ -1,0 +1,40 @@
+/* Estilização do header */
+header {
+    width: 100%;
+    height: 700px;
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, white, green);
+}
+
+
+
+/* Estilização do logotipo no header */
+header #logotipo {
+    position: absolute;
+    height: 600px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin: auto;
+}
+
+/* Estilização do formulário */
+form.form-horizontal {
+    margin-top: 210px; /* Aumenta a margem superior para posicionar mais abaixo */
+}
+
+/* Estilização dos campos do formulário */
+form.form-horizontal input[type="email"],
+form.form-horizontal input[type="password"],
+form.form-horizontal button {
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: block;
+    width: 40%; /* Ajusta para ocupar toda a largura */
+}
+
