@@ -1,21 +1,45 @@
 /* Estilização do header */
 header {
     width: 100%;
-    height: 700px;
+    height: 90vw;
     font-family: 'OpenSans', Arial, Helvetica, sans-serif;
     background-image: linear-gradient(90deg, white, green);
 }
 
 
+/* Estilização da caixa com degradê ao redor do formulário */
+form.form-horizontal {
+    background: linear-gradient(to bottom, lightgreen, green);
+    padding: 6vw;
+    border-radius: 40px;
+    border-left: 40vw;
+    
+    
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.3); 
+    width: 40%; 
+}
+
+/* Estilização do texto "Login" */
+.login-text {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    position: relative;
+    margin-right: 40vw;
+   
+   
+}
 
 /* Estilização do logotipo no header */
 header #logotipo {
     position: absolute;
-    height: 600px;
+    height: 50vw;
     width: auto;
-    left: 50%;
+    left: 45%;
+    resize: 30%;
     transform: translateX(-50%);
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     display: block;
     margin: auto;
@@ -23,7 +47,7 @@ header #logotipo {
 
 /* Estilização do formulário */
 form.form-horizontal {
-    margin-top: 210px; /* Aumenta a margem superior para posicionar mais abaixo */
+    margin-top: 11vw; 
 }
 
 /* Estilização dos campos do formulário */
@@ -32,9 +56,20 @@ form.form-horizontal input[type="password"],
 form.form-horizontal button {
     border: none;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
     display: block;
-    width: 40%; /* Ajusta para ocupar toda a largura */
+    width: 19vw; /* Ajusta para ocupar toda a largura */
 }
+/* Ajuste de largura para o botão */
+form.form-horizontal button {
+    width: 19vw;
+   
+}
+/* Estilização dos textos embaixo */
+.text-center {
+    text-align: center;
+}
+
+
 
