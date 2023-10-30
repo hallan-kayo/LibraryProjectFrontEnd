@@ -1,54 +1,60 @@
-/* Estilização do header */
-header {
-    width: 100%;
-    height: 90vw;
-    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(90deg, white, green);
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
 }
 
+body {
+   
+    font-family: 'OpenSans', Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(90deg, rgb(244, 255, 246), green);
+    display: flex;
+    width: 100%;
+    justify-content:space-around; 
+    
+}
 
 /* Estilização da caixa com degradê ao redor do formulário */
 form.form-horizontal {
-    background: linear-gradient(to bottom, lightgreen, green);
-    padding: 6vw;
-    border-radius: 40px;
-    border-left: 40vw;
-    
-    
-    box-shadow: 1 1 10px rgba(0, 0, 0, 0.3); 
-    width: 40%; 
+    background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
+    padding: 7em;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(251, 240, 240, 0.3);
+    width: 65%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; 
 }
 
 /* Estilização do texto "Login" */
 .login-text {
     text-align: center;
-    font-size: 40px;
+    font-size: 2em;
     color: rgb(0, 0, 0);
-    margin-bottom: 20px;
-    position: relative;
-    margin-right: 40vw;
-   
-   
+    margin-bottom: 10px;
 }
 
-/* Estilização do logotipo no header */
-header #logotipo {
+/* Estilização do logotipo no body */
+body #logotipo {
     position: absolute;
-    height: 50vw;
-    width: auto;
-    left: 45%;
-    resize: 30%;
-    transform: translateX(-50%);
-    top: 70%;
-    transform: translateY(-50%);
-    display: block;
-    margin: auto;
+    max-width: 50vw;
+    height: auto;
+    left: 75%; 
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Estilização do formulário */
+/* Ajuste do formulário */
 form.form-horizontal {
-    margin-top: 11vw; 
+    margin-top: 5vw;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    right: 50vw;
+    
 }
+
+ 
 
 /* Estilização dos campos do formulário */
 form.form-horizontal input[type="email"],
@@ -56,20 +62,38 @@ form.form-horizontal input[type="password"],
 form.form-horizontal button {
     border: none;
     border-radius: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     display: block;
-    width: 19vw; /* Ajusta para ocupar toda a largura */
+    width: 23vw;
+    box-sizing: border-box;
 }
+
 /* Ajuste de largura para o botão */
 form.form-horizontal button {
-    width: 19vw;
-   
+    width: 23vw;
+   margin-top: 2vw;
 }
+
 /* Estilização dos textos embaixo */
-.text-center {
-    text-align: center;
+.text-capitalize {   
+    position: absolute;
+    bottom: 9px;
+    width: 100%;
+    left: 8em;
+    
 }
+.link-light {
+    position: absolute;
+    bottom: 1px;
+    width: 100%;
+    left: 11vw;
 
-
-
+}
+@media screen and (max-width:768px){
+    body{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+}
