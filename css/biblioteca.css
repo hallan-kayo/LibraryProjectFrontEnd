@@ -23,7 +23,7 @@ form.form-horizontal {
     width: 65%;
     max-width: 800px;
     margin: 0 auto;
-    position: relative; 
+   
 }
 
 /* Estilização do texto "Login" */
@@ -42,6 +42,9 @@ body #logotipo {
     left: 75%; 
     top: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Ajuste do formulário */
@@ -64,7 +67,9 @@ form.form-horizontal button {
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    display: block;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
     width: 23vw;
     box-sizing: border-box;
 }
@@ -77,20 +82,22 @@ form.form-horizontal button {
 
 /* Estilização dos textos embaixo */
 .text-capitalize {   
-    position: absolute;
     bottom: 9px;
     width: 100%;
     left: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
 }
 .link-light {
-    position: absolute;
-    bottom: 1px;
-    width: 100%;
-    left: 11vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:425px){
     body{
         width: 100%;
         flex-direction: column;
