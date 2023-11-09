@@ -15,26 +15,28 @@ body {
     height: 100vh; 
 }
 
+
 /* Estilização da caixa com degradê ao redor do formulário */
 form.form-horizontal {
     position: relative;
     background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
-    padding: 5em;
+    padding: 6em;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(251, 240, 240, 0.3);
-    width: 80%;
-    max-width: 30vw;
+    width: 40%;
+    max-width: 40vw;
     margin: 0 auto;
-    margin-right:50vw ;
+    margin-left: 55vw;
      
 }
 
 /* Estilização do texto "Login" */
 .login-text {
     text-align: center;
-    font-size: 2em;
+    font-size: 50em;
     color: rgb(0, 0, 0);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
 }
 
 /* Estilização do logotipo no body */
