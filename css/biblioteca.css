@@ -17,6 +17,7 @@ body {
 
 /* Estilização da caixa com degradê ao redor do formulário */
 form.form-horizontal {
+    position: relative;
     background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
     padding: 5em;
     border-radius: 40px;
@@ -98,7 +99,7 @@ form.form-horizontal button {
     justify-content: center;
 
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:720px){
     body{
         width: 100%;
         flex-direction: column;
