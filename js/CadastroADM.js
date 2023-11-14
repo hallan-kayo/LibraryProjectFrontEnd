@@ -169,7 +169,7 @@ function setErrorFor(input, message) {
 }
 
 function setSuccessFor(input) {
-  // Se o input tiver a classe error ele remove
+  // Seo input tiver a classe error ele remove
   if (input.classList.contains("error")) {
     input.classList.remove("error");
 
@@ -187,3 +187,4 @@ function setSuccessFor(input) {
 function checkEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
