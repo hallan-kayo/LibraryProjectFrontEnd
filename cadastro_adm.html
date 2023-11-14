@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Administrador</title>
     <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cadastro-usuario.css">
+    <link rel="stylesheet" href="css/cadastro-adm.css">
     <link rel="stylesheet" href="fonts/Open_Sans/OpenSans-Regular.ttf">
     
     
 </head>
 
 <body>    
-    <div class="background">
+    <div class="background d-flex align-items-center justify-content-center">
         <div class="container mt-4">
-            <h2>Cadastro de Administrador</h2>
+            <h2 class="text-center mb-4">Cadastro de Administrador</h2>
     
                 <p><a href="#" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Início</a></p>
           
@@ -114,7 +113,9 @@
                     <label for="inputConfirmarEmail" class="form-label">Confirmar Email</label>
                     <input type="email" class="form-control" id="inputConfirmarEmail" placeholder="Confirme seu email" required>
                 </div>
+
     
+
                 <div class="senha">
                     <label for="inputSenha" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="inputSenha" placeholder="Senha" required>
@@ -133,18 +134,25 @@
                 <div class="row align-items-center">
                     <div class="col-md-9">
                         <p class="text-capitalize d-flex align-items-center">Possui cadastro?</p>
+
                     </div>
-                    <div class="col-md-2">
-                        <p class="d-flex align-items-center justify-content-end">
-                            <a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Entrar</a>
-                        </p>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="inputConfirmarSenha" class="form-label">Confirmar Senha</label>
+                            <input type="password" class="form-control" id="inputConfirmarSenha" placeholder="Confirme sua senha" required>
+                        </div>
                     </div>
                 </div>
 
-
+              
+            </form>
+    
+            <div class="button-container text-center mt-3 flex-column">
+                <button type="submit" class="btn btn-dark mt-2">Cadastrar</button>
+                <p class="text-capitalize mt-2">Já possui cadastro? <a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Entrar</a></p>
             </div>
-            
-            
+        </div>
+    </div>
 
     <script src="Lib/jquery/jquery.min.js"></script>
     <script src="./js/CadastroADM.js"></script>
