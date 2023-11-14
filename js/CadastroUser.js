@@ -17,163 +17,173 @@ const passwordConfirmation = document.getElementById("inputConfirmarSenha");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  
+  // se tiver algum campo errado ele retorna
+   const formIsCorrectly = checkInputs();
 
-  checkInputs();
+   if(!formIsCorrectly) return
+
+
+   //se os campos estiverem corretos ele limpa o form
+  form.reset()
 });
 
 function checkInputs() {
-  const usernameValue = username.value;
-  const sobrenomeValue = sobrenome.value;
-  const sexoValue = sexo.value;
-  const cpfValue = cpf.value;
-  const telefoneValue = telefone.value;
-  const cepValue = cep.value;
-  const ruaValue = rua.value;
-  const numeroValue = numero.value;
-  const bairroValue = bairro.value;
-  const cidadeValue = cidade.value;
-  const estadoValue = estado.value;
-  const emailValue = email.value;
-  const emailConfirmationValue = emailConfirmation.value;
-  const passwordValue = password.value;
-  const passwordConfirmationValue = passwordConfirmation.value;
   
 
-  if (usernameValue === "") {
+  if (username.value === "") {
     setErrorFor(username, "O nome de usuário é obrigatório!");
-  } else {
-    setSuccessFor(username);
+  } else{
+    setSuccessFor(username)
   }
 
-  if (sobrenomeValue === "") {
+  if (sobrenome.value === "") {
     setErrorFor(sobrenome, "O sobrenome de usuário é obrigatório!");
-  } else {
-    setSuccessFor(sobrenome);
-  }
+  } setSuccessFor(sobrenome)
 
-  if (sexoValue === "") {
+  if (sexo.value === "") {
     setErrorFor(sexo, "O sexo do usuário é obrigatório!");
-  } else {
-    setSuccessFor(sexo);
+  } else{
+    setSuccessFor(sexo)
   }
 
-  if (cpfValue === "") {
+  if (cpf.value === "") {
     setErrorFor(cpf, "O CPF é obrigatório!");
-  } else if (cpfValue.length < 11) {
+    console.log('CPF');
+  } else if (cpf.value.length < 11) {
     setErrorFor(cpf, "O CPF precisa ter no mínimo 11 dígitos!");
-  } else {
-    setSuccessFor(cpf);
+  }else{
+    setSuccessFor(cpf)
   }
 
-  if (telefoneValue === "") {
+  if (telefone.value === "") {
     setErrorFor(telefone, "O telefone é obrigatório!");
-  } else if (telefoneValue.length < 11) {
+  } else if (telefone.value.length < 11) {
     setErrorFor(telefone, "O telefone precisa ter no mínimo 11 dígitos!");
-  } else {
-    setSuccessFor(telefone);
+  } else{
+    setSuccessFor(telefone)
   }
 
-  if (cepValue === "") {
+  if (cep.value === "") {
     setErrorFor(cep, "O CEP é obrigatório!");
-  } else if (cepValue.length < 8) {
+  } else if (cep.value.length < 8) {
     setErrorFor(cep, "O CEP precisa ter no mínimo 8 dígitos!");
-  } else {
-    setSuccessFor(cep);
+  } else{
+    setSuccessFor(cep)
   }
 
-  if (ruaValue === "") {
+  if (rua.value === "") {
     setErrorFor(rua, "O nome da Rua do usuário é obrigatória!");
-  } else {
-    setSuccessFor(rua);
+  }else{
+    setSuccessFor(rua)
   }
 
-  if (numeroValue === "") {
+  if (numero.value === "") {
     setErrorFor(numero, "O número da residência do usuário é obrigatório!");
-  } else {
-    setSuccessFor(numero);
+  } else{
+    setSuccessFor(numero)
   }
 
-  if (bairroValue === "") {
+  if (bairro.value === "") {
     setErrorFor(bairro, "O Bairro do usuário é obrigatório!");
-  } else {
-    setSuccessFor(bairro);
+  }else{
+    setSuccessFor(bairro)
   }
 
-  if (cidadeValue === "") {
+  if (cidade.value === "") {
     setErrorFor(cidade, "A Cidade do usuário é obrigatória!");
-  } else {
-    setSuccessFor(cidade);
+  } else{
+    setSuccessFor(cidade)
   }
 
-  if (estadoValue === "") {
+  if (estado.value === "") {
     setErrorFor(estado, "O Estado do usuário é obrigatório!");
-  } else {
-    setSuccessFor(estado);
+  }else{
+    setSuccessFor(estado)
   }
 
-  if (emailValue === "") {
+  if (email.value === "") {
     setErrorFor(email, "O email é obrigatório!");
-  } else if (!checkEmail(emailValue)) {
+  } else if (!checkEmail(email.value)) {
     setErrorFor(email, "Por favor, insira um email válido!");
-  } else {
-    setSuccessFor(email);
+  } else{
+    setSuccessFor(email)
   }
 
-  if (emailConfirmationValue === "") {
+  if (emailConfirmation.value === "") {
     setErrorFor(emailConfirmation, "A confirmação de email é obrigatória!");
-  } else if (!checkEmail(emailConfirmationValue)) {
+  } else if (!checkEmail(emailConfirmation.value)) {
     setErrorFor(emailConfirmation, "Por favor, insira um email válido!");
-  } else {
-    setSuccessFor(emailConfirmation);
+  }else if (email.value !== emailConfirmation.value) {
+    setErrorFor(emailConfirmation, "Os emails não conferem!")
+  } else{
+    setSuccessFor(emailConfirmation)
   }
 
-  if (passwordValue === "") {
+  if (password.value === "") {
     setErrorFor(password, "A senha é obrigatória!");
-  } else if (passwordValue.length < 8) {
+  } else if (password.value.length < 8) {
     setErrorFor(password, "A senha precisa ter no mínimo 8 caracteres!");
-  } else {
-    setSuccessFor(password);
+  } else{
+    setSuccessFor(password)
   }
 
-  if (passwordConfirmationValue === "") {
+  if (passwordConfirmation.value === "") {
     setErrorFor(passwordConfirmation, "A confirmação de senha é obrigatória!");
-  } else if (passwordConfirmationValue !== passwordValue) {
+  } else if (passwordConfirmation.value !== password.value) {
     setErrorFor(passwordConfirmation, "As senhas não conferem!");
-  } else {
-    setSuccessFor(passwordConfirmation);
+  } else{
+    setSuccessFor(passwordConfirmation)
   }
 
   const formControls = form.querySelectorAll(".form-control");
+
+  console.log('formControls',...formControls);
 
   const formIsValid = [...formControls].every((formControl) => {
     return formControl.className === "form-control success";
   });
 
   if (formIsValid) {
+    alert("O cadastro está completo!")
     console.log("O cadastro está completo!");
   }
+
+  console.log('passowd',password.value);
+  console.log('confirmPass',passwordConfirmation);
+  return formIsValid
 }
 
 function setErrorFor(input, message) {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-
-  // Adiciona a mensagem de erro
-  small.innerText = message;
-
-  // Adiciona a classe de erro
-  formControl.className = "form-control error";
+  
+  //cria uma tag span para add a msg de erro
+  var errorMessage = document.createElement("span")
+  errorMessage.innerHTML = message
+  
+  // adiciona a tag span depois do input 
+  input.parentNode.insertBefore(errorMessage, input.nextSibling);
+  
+  
+  //adiciona a classe de erro
+  input.classList.add("error");
 }
 
 function setSuccessFor(input) {
-  const formControl = input.parentElement;
+  // Se o input tiver a classe error ele remove
+  if (input.classList.contains("error")) {
+    input.classList.remove("error");
 
-  // Adicionar a classe de sucesso
-  formControl.className = "form-control success";
+    // remove o elemento span de mensagem de erro no HTML
+    var errorMessage = input.nextElementSibling;
+    if (errorMessage && errorMessage.tagName === "SPAN") {
+      errorMessage.parentNode.removeChild(errorMessage);
+    }
+  }
+
+  // adiciona a classe success
+  input.classList.add("success");
 }
 
 function checkEmail(email) {
-  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-    email
-  );
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }

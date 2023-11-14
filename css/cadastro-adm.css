@@ -15,12 +15,19 @@ body {
 form{
     margin-top: 5vw;
     display: grid;
-    gap: 20px; /* Espaçamento entre os elementos */
+    gap: 15px; /* Espaçamento entre os elementos */
     grid-template-columns: repeat(3, 1fr); /* Duas colunas */
     grid-template-rows: auto; /* Altura automática para as linhas */
     
-   
+    
+
 }
+.form-control,
+.btn,
+.button-container a {
+    border-radius: 90px ;    
+} 
+
 label, input, select {
     margin-bottom: 16px;
 }
@@ -31,55 +38,80 @@ label {
 
 input, select {
     grid-column: 2; /* Posiciona o campo na segunda coluna */
+    border: none;
+	border-radius: 20px;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 
 
 .container {
-    max-width: 80vw;
+    max-width: 75vw;
     margin: 0 auto;
-    padding: 50px;
+    padding: 4vw;
     background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
     border: none;
     border-radius: 40px;
-    margin-top: 50vw;   
+   
+   
     
     
 }
-
-    button  {
+.btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 26vw;
-    margin-top: 30px;
-    width: 20vw;
-   
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
+
 .button-container{
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items: center;
-    margin-top: 20px;
-    margin-left:31vw ;
+    margin-top: 29px;
+    
+    
+   
 }
-/* form.row input[type="text"],
-form.row input[type="Sobrenome"],
-form.row input[type="Sexo"],
-form.row input[type="CPF"],
-form.row input[type="Telefone"],
-form.row input[type="CEP"],
-form.row input[type="Rua"],
-form.row input[type="Número"],
-form.row input[type="Bairro"],
-form.row input[type="Cidade"],
-form.row input[type="Estado"],
-form.row input[type="Email"],
-form.row input[type="Confimar Email"],
-form.row input[type="Senha"],
-form.row input[type="Confirmar Senha"],
-form.row button {
+
+.button-container a{
+    text-decoration:none ;
+    color: inherit;
+    display: inline-block;
+    vertical-align: middle;
+}
+.button-container button{
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+
+}
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input[type="text"],
+form.row input {
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
@@ -91,4 +123,17 @@ form.row button {
     box-sizing: border-box;
 
 
-} */
+} 
+@media screen and (min-width: 768px) {
+    form {
+      grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 768px) {
+    button {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+

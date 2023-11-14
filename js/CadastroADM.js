@@ -187,3 +187,4 @@ function setSuccessFor(input) {
 function checkEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
