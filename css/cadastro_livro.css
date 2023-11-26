@@ -11,7 +11,7 @@ body {
 .header {
     margin-bottom: 40vw;
     padding: 10px 20px;
-    
+
 }
 
 .title {
@@ -30,13 +30,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
 
 form {
     width: 30%;
-    
+
 }
 
 .form-group {
@@ -46,8 +46,8 @@ form {
     align-items: center;
     justify-content: center;
     width: 100%;
-    
-   
+
+
 }
 
 .btn-cadastrar {
@@ -55,34 +55,38 @@ form {
     width: 100%;
     margin: 10px 0;
 }
-h2{
+
+h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
 }
+
 .form-label {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
     gap: 10px;
 }
+
 .form-label input, .form-label label {
-    width: 100%; /* Para fazer com que as caixas de entrada ocupem todo o espaço disponível */
+    width: 100%;
+    /* Para fazer com que as caixas de entrada ocupem todo o espaço disponível */
     border-radius: 20px;
 
 }
+
 @media screen and (max-width: 600px) {
     .container {
-        width: 95%; 
+        width: 95%;
     }
 
     .form-label {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .form-label input, .form-label label {
-        width: auto; 
+        width: auto;
     }
 }
-

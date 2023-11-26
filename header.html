@@ -1,143 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
-   
-    <link rel="stylesheet" href="css/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/ae360af17e.js"
+      crossorigin="anonymous"
+    ></script>
 
-   
+    <link rel="stylesheet" href="css/header.css" />
+
     <title>Pagina de Inicio</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Sidebar -->
-        <aside id="sidebar">
-            <div class="h-100">
-                <div class="sidebar-logo">
-                    <a href="#">Biblioteca</a>
-                </div>
-                <!-- Sidebar Navigation -->
-                <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-bs-toggle="collapse" data-bs-target="#Cadastro"
-                            aria-expanded="false" aria-controls="Cadastro">
-                            <i class="fa-solid fa-list pe-2"></i>
-                            Cadastro
-                        </a>
-                        <ul id="Cadastro" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Leitor</a>
-                            </li>
-                            <!-- Adicione mais itens de submenu, se necessário -->
-                        </ul>
-                        <ul id="Cadastro" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Livro</a>
-                            </li>
-                            <!-- Adicione mais itens de submenu, se necessário -->
-                        </ul>
-                        <ul id="Cadastro" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Administrador</a>
-                            </li>
-                            <!-- Adicione mais itens de submenu, se necessário -->
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#pages"
-                            aria-expanded="false" aria-controls="Agendamento">
-                            <i class="fa-regular fa-file-lines pe-2"></i>
-                            Agendamento
-                        </a>
-                        <ul id="pages" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Visualizar Fila</a>
-                            </li>                            
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard"
-                            aria-expanded="false" aria-controls="dashboard">
-                            <i class="fa-solid fa-sliders pe-2"></i>
-                            Emprestimo
-                        </a>
-                        <ul id="dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Visualizar Emprestimo</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Efetuar Emprestimo</a>
-                            </li>
-
-                        
-                        </ul>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#auth"
-                            aria-expanded="false" aria-controls="auth">
-                            <i class="fa-regular fa-user pe-2"></i>
-                          Ferramentas
-                        </a>
-                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Login</a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a href="#" class="sidebar-link">Register</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <ul class="additional-items">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                Perfil
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                Configurações
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">
-                                Suporte
-                            </a>
-                        </li>
-                    </ul>
-                    
-                </ul>
-            </div>
-        </aside>
-        <!-- Main Component -->
-        <div class="main">
-            <nav class="navbar navbar-expand px-3 border-bottom">
-                <!-- Button for sidebar toggle -->
-                <button class="btn" type="button" data-bs-theme="dark">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <main class="content px-3 py-2">
-                <div class="container-fluid">
-                    <div class="container">
-                        <img id="logotipo" src="img/construção.png.png" alt="Logotipo">
-                    </div>
-                </div>
-            </main>
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="h-100">
+          <div class="sidebar-logo">
+            <a href="#">Biblioteca</a>
+          </div>
+          <!-- Sidebar Navigation -->
+          <ul class="sidebar-nav">
+            <li class="sidebar-header"></li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#Cadastro"
+                aria-expanded="false"
+                aria-controls="Cadastro"
+              >
+                <i class="fa-solid fa-list pe-2"></i>
+                Cadastro
+              </a>
+              <ul
+                id="Cadastro"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Leitor</a>
+                </li>
+                <!-- Adicione mais itens de submenu, se necessário -->
+              </ul>
+              <ul
+                id="Cadastro"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Livro</a>
+                </li>
+                <!-- Adicione mais itens de submenu, se necessário -->
+              </ul>
+              <ul
+                id="Cadastro"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Administrador</a>
+                </li>
+                <!-- Adicione mais itens de submenu, se necessário -->
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#pages"
+                aria-expanded="false"
+                aria-controls="Agendamento"
+              >
+                <i class="fa-regular fa-file-lines pe-2"></i>
+                Agendamento
+              </a>
+              <ul
+                id="pages"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Visualizar Fila</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#dashboard"
+                aria-expanded="false"
+                aria-controls="dashboard"
+              >
+                <i class="fa-solid fa-sliders pe-2"></i>
+                Emprestimo
+              </a>
+              <ul
+                id="dashboard"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Visualizar Emprestimo</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Efetuar Emprestimo</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#auth"
+                aria-expanded="false"
+                aria-controls="auth"
+              >
+                <i class="fa-regular fa-user pe-2"></i>
+                Ferramentas
+              </a>
+              <ul
+                id="auth"
+                class="sidebar-dropdown list-unstyled collapse"
+                data-bs-parent="#sidebar"
+              >
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Login</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Register</a>
+                </li>
+              </ul>
+            </li>
+            <ul class="additional-items">
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link"> Perfil </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link"> Configurações </a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link"> Suporte </a>
+              </li>
+            </ul>
+          </ul>
         </div>
+      </aside>
+      <!-- Main Component -->
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <!-- Button for sidebar toggle -->
+          <button class="btn" type="button" data-bs-theme="dark">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+
+        <main class="content px-3">
+          <div class="container-fluid">
+            <div class="container flex-container">
+              <div class="rounded-box">
+                <h2 class="top-left">Ler Faz Bem</h2>
+                <p class="subtext top-left">
+                  Explore o universo literário da nossa biblioteca digital.
+                  Navegue por histórias, aprofunde-se em conhecimento e mergulhe
+                  na magia das palavras. Descubra um mundo de possibilidades em
+                  cada página. Bem-vindo(a) à nossa biblioteca online, onde a
+                  sabedoria espera por você.
+                </p>
+                <img
+                  src="img/mulher-livro.png"
+                  alt="Ler Faz Bem"
+                  class="img-fluid rounded bottom-right"
+                />
+
+                <button class="btn btn-primary my-books-button bottom-left">
+                  Meus Livros
+                </button>
+              </div>
+
+              <div class="book-list">
+                <ul class="list-group">
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 1</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 2</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 3</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 4</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 5</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 6</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 7</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 8</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 9</a>
+                  </li>
+                  <li class="list-group-item p-0">
+                    <a href="#">Livro 10</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-link-light">Ver Todos...</a>
+                
+              </div>
+              
+            </div>
+            
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="custom-square">Livro em Fila</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="custom-square">Livro em Fila</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="custom-square">Livro em Fila</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="custom-square">Livro em Fila</div>
+                </div>
+            </div>
+        </div>
+        </main>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-<script src="nav-bar/nav-bar.js"></script>    
-   
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="nav-bar/nav-bar.js"></script>
+  </body>
 </html>

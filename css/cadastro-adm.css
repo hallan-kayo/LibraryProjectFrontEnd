@@ -17,15 +17,19 @@ body {
 form {
     margin-top: 3vw;
     display: grid;
+    /* o erro ta aqui */
     gap: 20px;
     grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    grid-template-columns: 1fr 1fr; /* Adicionei esta linha para dividir em duas colunas */
+    grid-template-columns: 1fr 1fr;
+    /* Adicionei esta linha para dividir em duas colunas */
 }
+
 .label-container,
 .input-container,
 .email,
 .senha {
-    grid-column: span 2; /* Estende os containers por duas colunas */
+    grid-column: span 2;
+    /* Estende os containers por duas colunas */
 }
 
 
@@ -33,14 +37,18 @@ form {
 .email input,
 .confirmemail input,
 .senha input,
-.confirmsenha input{
-    width: 100%; /* Alterado para 100% para garantir que todos tenham a mesma largura */
+.confirmsenha input {
+    width: 100%;
+    /* Alterado para 100% para garantir que todos tenham a mesma largura */
 }
+
 #date {
-    grid-column: span 2; /* Ocupa duas colunas para alinhar com os outros campos */
-    width: 80%; /* Garante que o campo de data tenha a mesma largura */
+    grid-column: span 2;
+    /* Ocupa duas colunas para alinhar com os outros campos */
+    width: 80%;
+    /* Garante que o campo de data tenha a mesma largura */
     padding: 7px;
-    
+
 }
 
 
@@ -48,7 +56,7 @@ form {
 .btn,
 .button-container a {
     border-radius: 90px;
-    
+
 }
 
 input,
@@ -80,11 +88,13 @@ input[name="full_name"] {
 
 
 .btn {
-    grid-column: span 2; /* Estende o container por duas colunas */
+    grid-column: span 2;
+    /* Estende o container por duas colunas */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px; /* Ajustei a margem do botão para 20px */
+    margin-top: 20px;
+    /* Ajustei a margem do botão para 20px */
 }
 
 button {
@@ -92,32 +102,38 @@ button {
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 2vw;  
+    height: 2vw;
     border: none;
     border-radius: 20px;
     margin-left: 17vw;
-    
-    
+
+
 }
+
 .button-container {
-    grid-column: span 2; /* Estende o container por duas colunas */
+    grid-column: span 2;
+    /* Estende o container por duas colunas */
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
 }
+
 .form-container {
     display: grid;
     gap: 20px;
-    grid-template-rows: auto auto auto; /* Removi a linha para o botão */
-    grid-template-columns: 1fr 1fr; /* Mantive esta linha para dividir em duas colunas */
+    grid-template-rows: auto auto auto;
+    /* Removi a linha para o botão */
+    grid-template-columns: 1fr 1fr;
+    /* Mantive esta linha para dividir em duas colunas */
 }
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px; /* Ajustei a margem do botão para 20px */
+    margin-top: 20px;
+    /* Ajustei a margem do botão para 20px */
 }
 
 @media screen and (min-width: 768px) {
@@ -126,10 +142,12 @@ button {
     }
 
     .button-container {
-        flex-direction: column; /* Altera a direção para coluna em telas menores */
-        align-items: center; /* Centraliza na direção da coluna */
+        flex-direction: column;
+        /* Altera a direção para coluna em telas menores */
+        align-items: center;
+        /* Centraliza na direção da coluna */
     }
 
-   
-    
-} 
+
+
+}

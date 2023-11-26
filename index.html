@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca</title>
-    <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/biblioteca.css">
-    <link rel="stylesheet" href="fonts/Open_Sans/OpenSans-Regular.ttf">
-</head>
+    <link rel="stylesheet" href="Lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/biblioteca.css" />
+    <link rel="stylesheet" href="fonts/Open_Sans/OpenSans-Regular.ttf" />
+  </head>
 
-<body>
-  
+  <body>
+    <div class="container">
+      <img id="logotipo" src="img/biblioteca-logotipo.png.png" alt="Logotipo" />
+    </div>
 
-    
-        <div class="container">
-            <img id="logotipo" src="img/biblioteca-logotipo.png.png" alt="Logotipo">
-        </div>
-       
-        <div class="header-degrader">
-            <div class="container">
-               
+    <div class="header-degrader">
+      <div class="container"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <h2 class="login-text">Login</h2>
+            <label for="inputEmail3" class="col-sm-2 control-label"
+              >Email</label
+            >
+            <div class="col-sm-10">
+              <input
+                name="email"
+                type="email"
+                id="inputEmail3"
+                placeholder="Email"
+              />
             </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <form class="form-horizontal">
-                    <div class="form-group">
-                      <h2 class="login-text">Login</h2>
-                      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                      <div class="col-sm-10">
-                        <input name = "email" type="email" id="inputEmail3" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">Senha</label>
-                      <div class="col-sm-10">
-                        <input name = "password" type="password" id="inputPassword3" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-sm-offset-2 col-sm-10">
-                       
-                    </div>
-                    <div class="form-group">
-                      <button name = "login" type="button" class="btn btn-dark">Entrar</button>
-                    </div>
-                </form>
-                <p class="text-capitalize">Não possui cadastro?</p>
-                <p><a href="#" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" id="linkCadastro" >Registre-se aqui</a></p>
-            
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label"
+              >Senha</label
+            >
+            <div class="col-sm-10">
+              <input
+                name="password"
+                type="password"
+                id="inputPassword3"
+                placeholder="Password"
+              />
             </div>
-        </div>
-    
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10"></div>
+          </div>
+          <div class="form-group">
+            <button name="login" type="button" class="btn btn-dark">
+              Entrar
+            </button>
+          </div>
+        </form>
+        <p class="text-capitalize">Não possui cadastro?</p>
+        <p>
+          <a
+            href="#"
+            class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+            id="linkCadastro"
+            >Registre-se aqui</a
+          >
+        </p>
+      </div>
+    </div>
 
     <script src="Lib/jquery/jquery.min.js"></script>
     <script src="Lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src = "./js/loginPage.js"></script>
+    <script src="./js/loginPage.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-   
-    
-   
-</body>
-</body>
+  </body>
 </html>
