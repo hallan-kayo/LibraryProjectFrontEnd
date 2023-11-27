@@ -19,28 +19,76 @@
           <div class="sidebar-logo">
             <a href="#">Biblioteca</a>
           </div>
-          <li class="sidebar-header">Livraria...</li>
+          <ul class="sidebar-nav">
+            <li class="sidebar-header">Livraria...</li>
+            <li class="sidebar-item">
+              <a
+                href="#emprestimos"
+                class="sidebar-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#submenu-emprestimos"
+                aria-expanded="false"
+              >
+                Emprestimos
+              </a>
+              <ul class="collapse list-unstyled" id="submenu-emprestimos">
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 1</a>
+                </li>
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#agendamentos"
+                class="sidebar-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#submenu-agendamentos"
+                aria-expanded="false"
+              >
+                Agendamentos
+              </a>
+              <ul class="collapse list-unstyled" id="submenu-agendamentos">
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 1</a>
+                </li>
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-item">
+              <a
+                href="#biblioteca"
+                class="sidebar-link"
+                data-bs-toggle="collapse"
+                data-bs-target="#submenu-biblioteca"
+                aria-expanded="false"
+              >
+                Biblioteca
+              </a>
+              <ul class="collapse list-unstyled" id="submenu-biblioteca">
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 1</a>
+                </li>
+                <li class="sidebar-subitem">
+                  <a href="#">Opção 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
           <ul class="additional-items">
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link"> Emprestimos </a>
+              <a href="#" class="sidebar-link"> Perfil </a>
             </li>
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link"> Agendamentos </a>
+              <a href="#" class="sidebar-link"> Configurações </a>
             </li>
             <li class="sidebar-item">
-              <a href="#" class="sidebar-link"> Biblioteca </a>
+              <a href="#" class="sidebar-link"> Suporte </a>
             </li>
-            <ul class="additional-items2">
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link"> Perfil </a>
-              </li>
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link"> Configurações </a>
-              </li>
-              <li class="sidebar-item">
-                <a href="#" class="sidebar-link"> Suporte </a>
-              </li>
-            </ul>
           </ul>
         </div>
       </aside>
@@ -53,16 +101,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
         </nav>
-        <main class="content px-3">
+        <main class="content mb-4">
           <div class="container-fluid">
             <div class="container flex-container">
               <div class="rounded-box">
                 <h2 class="top-left">Ler Faz Bem</h2>
                 <p class="subtext top-left">
-                  Em meio às paisagens áridas do sertão nordestino, a leitura
-                  emerge como um oásis de conhecimento e imaginação. Assim como
-                  nossos rios desafiam a seca, os livros nos convidam a
-                  enfrentar as adversidades com sabedoria e coragem.
+                  Os verdadeiros analfabetos são os que aprenderam a ler e não
+                  leem.
                 </p>
                 <img
                   src="img/mulher-livro.png"
@@ -74,40 +120,59 @@
                   Meus Livros
                 </button>
               </div>
-              <div class="book-list bg-light p-4">
+
+              <div class="book-list">
                 <ul class="list-group">
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 1</a>
+                  <li class="list-group">
+                    <a href="#"> Memórias Póstumas de Brás Cubas </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 2</a>
+                  <li class="list-group">
+                    <a href="#">Crime e Castigo </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 3</a>
+                  <li class="list-group">
+                    <a href="#">As Aventuras do Senhor Pickwick </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 4</a>
+                  <li class="list-group">
+                    <a href="#">Ensaios </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 5</a>
+                  <li class="list-group">
+                    <a href="#">Górgias </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 6</a>
+                  <li class="list-group">
+                    <a href="#">Moby Dick </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 7</a>
+                  <li class="list-group">
+                    <a href="#">Os Cantos de Canterbury  </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 8</a>
+                  <li class="list-group">
+                    <a href="#">Paranoia  </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 9</a>
+                  <li class="list-group">
+                    <a href="#">Stoner </a>
                   </li>
-                  <li class="list-group-item border-0 p-0">
-                    <a href="#">Livro 10</a>
+                  <li class="list-group">
+                    <a href="#">É Isto é um homem? </a>
                   </li>
                 </ul>
                 <a href="#" class="btn btn-link-light">Ver Todos...</a>
+              </div>
+            </div>
+          </div>
+          <div class="container mb-4">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="custom-square">Fila de Espera</div>
+              </div>
+              <div class="col-md-4">
+                <div class="custom-square">Fila de Espera</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="custom-square">Fila de Espera</div>
+              </div>
+              <div class="col-md-4">
+                <div class="custom-square">Fila de Espera</div>
               </div>
             </div>
           </div>

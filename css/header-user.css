@@ -14,7 +14,8 @@ body {
     background-position: center bottom;
     background-size: cover;
     color: #ffffff;
-    /* Adicionando a cor do texto para o corpo do documento */
+    width: 100%;
+
 }
 
 h3 {
@@ -114,17 +115,17 @@ a.sidebar-link {
 }
 
 .content {
-    flex: 1;
-    max-width: 100vw;
-    width: 100vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .rounded-box {
     position: relative;
-    width: 553px;
-    height: 230px;   
-    margin-top: 25px;
-    left: 100px;
+    width: 600px;
+    height: 230px;
+    margin-top: 20px;
+    left: 9vw;
     background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -137,34 +138,35 @@ a.sidebar-link {
     left: 50px;
     font-size: 24px;
     color: #333;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .subtext {
     position: absolute;
     top: 100px;
     left: 50px;
-    font-size: 15px;
+    font-size: 20px;
     color: #555;
 }
 
 
 .bottom-left {
+    font-size: 16px;
     position: absolute;
     bottom: 10px;
     left: 50px;
     bottom: 30px;
     background-color: #ffffff;
-    color: #1e0bb1;
+    color: rgb(178, 103, 103);
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+
 }
 
 .bottom-left:hover {
-    background-color: rgb(211, 0, 215);
+    background-color: rgb(0, 0, 0);
 }
 
 .bottom-right {
@@ -172,35 +174,43 @@ a.sidebar-link {
     bottom: 10px;
     right: 10px;
     width: 120px;
-    max-height: 150px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
+
 }
 
 .book-list {
-    width: 292px;
-    height: 666px;
-    margin-top: 20px;  
+    width: 300px;
+    height: 750px;
+    margin-top: 20px;
     background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-left: 190px;
-    
+    margin-left: 20vw;
+
+}
+
+.book-list h2 {
+    font-size: 19px;
+    color: #333;
+
 }
 
 .book-list li a {
     text-decoration: none;
-    color: #555;
-    font-size: 16px;
-    margin-bottom: 10px;
+    color: #000000;
+    font-size: 19px;
+    margin-bottom: 6px;
     display: block;
-    
+    margin-left: 15px;
+
 }
 
 .book-list li a:hover {
     color: #000000;
-    
+
 }
 
 .flex-container {
@@ -208,16 +218,16 @@ a.sidebar-link {
 }
 
 .book-list li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 25px;
-    /* Ajuste conforme necessário para aumentar o espaço entre os livros */
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0%;
+
 }
 
 .book-list li a {
     text-decoration: none;
-    color: #555;
-    font-size: 16px;
+    color: #615959;
+    font-size: 19px;
     display: block;
 }
 
@@ -237,11 +247,36 @@ a.sidebar-link {
     padding-top: 26vw;
 }
 
+.custom-square {
+    width: 250px;
+    height: 120px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(42, 173, 148), rgb(86, 196, 116));
+    color: #000000;
+    text-align: center;
+    padding-top: 50px;
+    border-radius: 15px;
+    margin: 30px;
+    margin-left: 10vw;
+
+
+
+}
+
+.custom-square {
+
+    margin-top: -340px;
+    margin-bottom: 400px;
+
+}
+
+
+
 /* Responsive */
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .content {
-        width: auto;
-        max-width: 100%;
+        width: 100%;
+        flex-direction: column;
     }
 }
